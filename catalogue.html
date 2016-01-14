@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин Nerd's.</title>
+    <link rel="stylesheet" href="css/normalize-mini.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500,300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style-mini.css">
+  </head>
+  <body>
+
+  <!--HEADER-->
+
+    <header class="main-header">
+      <div class="container catalogue-header">
+        <!--HEADER_TOP-->
+        <div class="header-top clearfix">
+    
+          <a class="logo" href="index.html">
+              <img src="img/logo-header.png" alt="Логотип Nerd's" width="139" height="56">
+          </a>
+          <!--MAIN NAVIGATION-->
+          <nav class="header-nav">
+            <ul class="nav-container">
+                <li><a href="index.html">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li class="current"><a href="catalogue.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <!--CART-->
+          <div class="cart">
+            <a href="#"><i class="icon-basket"></i>Корзина</a>
+          </div>
+        </div>
+        <h1 class="capitalized">Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+  
+  <!--CONTENT-->
+
+    <main class="main-content">
+      <div class="container clearfix">
+        <!--FILTER-->
+        <div class="main-filter">
+          <form action="/echo" method="post">
+            <!--FILTER BY PRICE-->
+            <div class="price-filter">
+              <h4>Стоимость:</h4>
+              <div class="range-controls">
+                <div class="scale"><div style="width:70%;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">От <input type="text" value="0"></label> 
+                <label class="max-price">до <input type="text" value="15 000"></label>
+              </div>
+            </div>
+            <!--FILTER BY GRID-->
+            <div class="grid-filter">
+              <h4>Сетка:</h4>
+                <input type="radio" name="grid" id="adaptive-grid" value="adaptive" checked>
+                <label for="adaptive-grid">Адаптивная</label>
+                <input type="radio" name="grid" id="fixed-grid" value="fixed">
+                <label for="fixed-grid">Фиксированная</label>
+                <input type="radio" name="grid" id="fluid-grid" value="fluid" disabled>
+                <label for="fluid-grid">Резиновая</label>
+            </div>
+            <!--FILTER BY FEATURES-->
+            <div class="features-filter">
+              <h4>Особенности:</h4>
+                <input type="checkbox" name="slider" id="slider" value="slider-field" checked>
+                <label for="slider">Слайдер</label>
+                <input type="checkbox" name="advantages" id="advantages" value="advantages-field">
+                <label for="advantages">Блок преимуществ</label>
+                <input type="checkbox" name="news" id="news" value="news-field" checked>
+                <label for="news">Новости</label>
+                <input type="checkbox" name="gallery" id="gallery" value="gallery-field" disabled>
+                <label for="gallery">Галерея</label>
+                <input type="checkbox" name="cart" id="cart" value="cart-field">
+                <label for="cart">Корзина</label> 
+            </div>
+            <input class="btn btn-grey" type="submit" value="Показать">
+          </form>
+        </div> 
+        <!--CATALOGUE-->
+        <div class="main-catalogue">
+          <!--KINDS OF SORTING OF CATALOGUE-->
+          <div class="sorting-catalogue clearfix">
+            <h6>Сортировать:</h6>
+            <ul class="sorter-block">
+              <li><a class="sorter " href="#">по цене</a></li>
+              <li><a class="sorter" href="#">по типу</a></li>
+              <li><a class="sorter" href="#">по функционалу</a></li>
+            </ul>
+            <ul class="arrows-block">
+              <li><a class="arrow icon-down-dir active" href="#"></a></li>
+              <li><a class="arrow icon-up-dir" href="#"></a></li>
+            </ul>
+          </div>
+          <!-- BLOCK OF CATALOGUE ITEMS-->
+          <div class="catalogue clearfix">
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item1.jpg" alt="Aviator" width="240" height="240">
+              </a>
+                <!--ANCHOR HOVER POP_UP-->
+              <div class="item-pop-up">
+                <h4>Наименование</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item2.jpg" alt="Beach" width="240" height="240">
+              </a>
+              <div class="item-pop-up">
+                 <!--ANCHOR HOVER POP_UP-->
+                <h4>Наименование</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item3.jpg" alt="Forte" width="240" height="240">
+              </a>
+               <!--ANCHOR HOVER POP_UP-->
+              <div class="item-pop-up">
+                <h4>Наименование</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item4.jpg" alt="Marquee" width="240" height="240">
+              </a>
+               <!--ANCHOR HOVER POP_UP-->
+              <div class="item-pop-up">
+                <h4>Наименование</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item5.jpg" alt="Avenue" width="240" height="240">
+              </a>
+               <!--ANCHOR HOVER POP_UP-->
+              <div class="item-pop-up">
+                <h4>Наименование</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+            <div class="catalogue-item">
+              <a href="#">
+                <img src="img/catalogue-item6.jpg" alt="Aviator" width="240" height="240">
+              </a>
+               <!--ANCHOR HOVER POP_UP-->
+              <div class="item-pop-up">
+                <h4>Наименование товара</h4>
+                <p>Краткое описание товара</p>
+                <button class="btn">10 000 Р.</button>
+              </div>
+            </div>
+          </div>
+          <!--CATALOGUE PAGINATION-->
+          <ul class="pagination clearfix">
+            <li class="btn current">1</li>
+            <li><a class="btn btn-grey btn-page" href="#">2</a></li>
+            <li><a class="btn btn-grey btn-page" href="#">3</a></li>
+            <li><a class="btn btn-grey btn-next" href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!--FOOTER-->
+  
+    <footer class="main-footer">
+      <!--MAP AND CONTACTS-->
+      <div class="clearfix" id="map">
+        <div class="footer-contacts">
+          <p><strong>Nerds Design Studio</strong></p>
+          <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn connection" href="form.html">Напишите нам</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <!--SOCIAL-->
+        <div class="footer-social clearfix">
+          
+          <div class="social-icons">
+            <a class="social-btn" href="#"><i class="icon-vk"></i></a>
+            <a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+            <a class="social-btn" href="#"><i class="icon-instagramm"></i></a>
+          </div>
+          
+          <div class="social-ad grey">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-content">
+      <div class="modal-content-close"></div>
+      <form method="post" action="/echo">
+        <div class="user-info clearfix">
+          <div class="left-column">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" value="Представьтесь,пожалуйста">
+          </div>
+          <div class="right-column">
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email" value="Для отправки ответа">
+          </div>
+        </div>
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text">В свободной форме</textarea>
+        <div class="buttons clearfix">
+          <input class="btn" type="submit" value="Отправить">
+          <input class="btn btn-grey" type="reset" value="Отмена">
+        </div>
+      </form>
+    </div>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/map_logo_mark-mini.js" type="text/javascript"></script>
+<script src="js/modal_pop_up-mini.js" type="text/javascript"></script>
+  </body>
+</html>

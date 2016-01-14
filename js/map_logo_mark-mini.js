@@ -1,0 +1,1 @@
+ymaps.ready(function(){var e=new ymaps.Map("map",{center:[59.93855426,30.3224795],controls:["zoomControl"],zoom:17}),o=new ymaps.Placemark(e.getCenter(),{hintContent:"Собственный значок метки"},{iconLayout:"default#image",iconImageHref:"img/nerds-marker.png",iconImageSize:[231,190],iconImageOffset:[-23,-190]});e.geoObjects.add(o),e.behaviors.disable("scrollZoom")});
