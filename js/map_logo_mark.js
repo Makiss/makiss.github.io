@@ -5,7 +5,7 @@ ymaps.ready(function () {
                       zoom: 17
                   }),
                   myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                      hintContent: 'Собственный значок метки'
+                      hintContent: 'Собственный значок метки',
                   }, {
                       // Опции.
                       // Необходимо указать данный тип макета.
@@ -18,6 +18,15 @@ ymaps.ready(function () {
                       // её "ножки" (точки привязки).
                       iconImageOffset: [-23, -190]
                   });
+
+                  myMap.balloon.open(
+                // Позиция балуна
+                [59.93855426, 30.32247950], {
+                contentBody: 'Оперный театр'
+            }, {
+               // Опции балуна. В данном примере указываем, что балун не должен иметь кнопку закрытия.
+                closeButton: false
+        });
 
               myMap.geoObjects.add(myPlacemark);
 
